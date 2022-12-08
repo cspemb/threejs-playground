@@ -14,7 +14,7 @@ const initialCarPos = [0, 0, 3];
 function Car(props: CarProps) {
   const { showing, showGithubButton } = props;
   const carRef = useRef<Object3D>(null!);
-  const result = useLoader(GLTFLoader, "/car/scene.gltf");
+  const result = useLoader(GLTFLoader, "car/scene.gltf");
   const three = useThree();
 
   three.camera.lookAt(carRef.current?.position || initialCarPos);

@@ -9,7 +9,7 @@ export const finishPosition = new Vector3(0, 0, 15);
 
 function Finish(props: FinishProps) {
   const finishRef = useRef<THREE.Object3D>(null!);
-  const result = useLoader(GLTFLoader, "/finish_line/scene.gltf");
+  const result = useLoader(GLTFLoader, "finish_line/scene.gltf");
 
   return (
     <primitive
